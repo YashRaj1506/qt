@@ -1,6 +1,7 @@
 import sys
 from PyQt5.QtWidgets import (QApplication, QMainWindow, QLabel, 
-                             QWidget, QVBoxLayout, QHBoxLayout, QGridLayout, QPushButton)
+                             QWidget, QVBoxLayout, QHBoxLayout, QGridLayout, QPushButton
+                             , QCheckBox)
 from PyQt5.QtGui import QIcon, QPixmap
 from PyQt5.QtGui import QFont
 from PyQt5.QtCore import Qt
@@ -79,16 +80,20 @@ class MainWindow(QMainWindow):
 
 #         # label.setScaledContents(True)
 
-    def initUI(self):
-        self.button.setGeometry(150,200,200,100)
-        self.button.setStyleSheet("font-size: 30px;")
-        self.button.clicked.connect(self.on_click)
+# ----------button-----------
+
+    # def initUI(self):
+    #     self.button.setGeometry(150,200,200,100)
+    #     self.button.setStyleSheet("font-size: 30px;")
+    #     self.button.clicked.connect(self.on_click)
 
 
-    def on_click(self):
-        print("Button Clicked")
-        self.button.setText("Clicked!")
-        self.button.setDisabled(True)
+    # def on_click(self):
+    #     print("Button Clicked")
+    #     self.button.setText("Clicked!")
+    #     self.button.setDisabled(True)
+
+
 
 def main():
     app = QApplication(sys.argv)
